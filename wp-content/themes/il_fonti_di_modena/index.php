@@ -8,13 +8,25 @@
     <hr>
     <h3 class="title">Quienes Somos</h3>
     <hr>
+     <?php
+      $arg = array(
+        'post_type'       => 'menu',
+        'posts_per_page'  => 2
+      );
+
+      $get_arg = new WP_Query( $arg );
+
+      while ( $get_arg->have_posts() ) {
+        $get_arg->the_post();
+      ?>
     <div class="about-bottom-grids">
       <div class="col-md-6 about-bottom-left">
-        <h4>Empresa</h4>
-        <p>La IL FONTI DI MODENA se inicia en el año 1997, antes de esa fecha nuestra familia ya tenía un negocio similar en menor escala, la “Fuente Italiana”, del cual tomamos el concepto de pastas de la más alta calidad y un excelente servicio, agregando más variedad de platos como las carnes a la parrilla y exótica gastronomía del mar. Nuestra empresa es 100% familiar con recetas que nuestra madre Modena nos entregó, ofreciendo preparaciones de calidad garantizada, con combinaciones únicas de ingredientes. En nuestros restaurantes, siempre encontrarás excelentes  productos, en un ambiente familiar, con la mejor atención y a precios convenientes. Nuestros locales están minuciosamente preparados para reuniones familiares y celebraciones. Ese sabor tradicional e inolvidables momentos es lo que queremos transmitir al resto de los chilenos.
-        </p>
+         <h4><?php the_title() ?></h4>
+        <p><?php the_content() ?></p>
       </div>
-      <div class="col-md-6 about-bottom-left about-bottom-right">
+       <?php } wp_reset_postdata();
+    ?>
+      <!------<div class="col-md-6 about-bottom-left about-bottom-right">
         <h4>Procesos</h4>
         <p>En la moderna planta ubicada en Colina, se manufacturan todos los platos que diariamente se ofrecen en nuestros locales. Para ello contamos con un riguroso proceso de elaboración que va desde la selección de las materias primas, el proceso de cocción, y un exigente control sanitario que aseguran preparaciones garantizadas y de la más alta calidad. Nuestra planta está implementada con equipos y tecnología de última generación para la producción, conservación y almacenamiento de nuestros productos, lo cual combinado con las inigualables recetas tradicionales han hecho el éxito de La Piccola Italia. Parte de la garantía de calidad de cada uno de nuestros platos se refleja también en las permanentes evaluaciones y testing de los proveedores, los cuales deben cumplir con exigentes estándares.</p>
       </div>
