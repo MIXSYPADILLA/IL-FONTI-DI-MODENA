@@ -72,5 +72,13 @@
 ###  Carta Menú con fotos de variados platos.
 ###  Información de el restaurante IL FONTI DI MODENA.
 ###  Datos de contacto y formularios para hacer reservas con anticipación.
-### mapa de ubicacion IL FONTI DI MODENA.
-### links que redireccionan a sitios de redes sociales reales de IL FONTI DI MODENA.
+###  mapa de ubicacion IL FONTI DI MODENA.
+###  links que redireccionan a sitios de redes sociales reales de IL FONTI DI MODENA.
+
+## - Usuario Wordpress:
+
+### mixsypadilla
+
+## - clave Wordpress:
+
+### 12345678
