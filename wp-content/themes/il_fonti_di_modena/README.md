@@ -77,8 +77,11 @@
 
 ## - Usuario Wordpress:
 
-### mixsypadilla
+### mathi-agistin
 
-## - clave Wordpress:
+### - clave Wordpress:
 
-### 12345678
+### 9mayo1985
+
+## - URL: http://186.64.118.50/~mpmpadilla/PRUEBA-4/
+
