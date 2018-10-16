@@ -317,18 +317,7 @@
                         <h4>- Reservas por cumpleaños informarlas, para descuento y regalo sorpresa.</h4>
 
                       </div>
-                      <div class="col-md-6 contact-form">
-                        <form>
-                          <input type="text" placeholder="Nombre(*)" required="">
-                          <input type="text" placeholder="Email(*)" required="">
-                          <input type="text" placeholder="Tema(*)" required="">
-                          <textarea placeholder="Mensaje(*)" required=""></textarea>
-                          <input type="submit" value="HAS TU RESERVA">
-                        </form>
-                      </div>
-                      <div class="clearfix"> </div>
-                    </div>
-                  </div>
+                      <?php echo do_shortcode('[contact-form-7 id="10" title="Formulario de contacto 1"]') ?>
                   <!-- //container -->
                 </div>
                 <!-- //contact -->
